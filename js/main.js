@@ -19,7 +19,7 @@ const app = new Vue({
     
             console.log(response.data);
 
-            this.email = response.data.;
+            this.email = response.data;
 
              })
 
