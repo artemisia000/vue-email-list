@@ -6,10 +6,13 @@ const app = new Vue({
         email: '',
 
     },
-    created(){
-        this.getEmail();
 
+    
+
+    created(){
+        this.getEmail()
     },
+
 
     methods: {
 
@@ -19,7 +22,7 @@ const app = new Vue({
     
             console.log(response.data);
 
-            this.email = response.data;
+            this.email = response.data.response;
 
              })
 
@@ -36,3 +39,4 @@ const app = new Vue({
 
 
 });
+
